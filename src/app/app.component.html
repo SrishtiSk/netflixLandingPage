@@ -1,13 +1,11 @@
 <div class="container">
   <div class="header">
     <!-- header Banner area -->
-    <div class="header_banner">
+    <div class="header_banner" [ngStyle]="{
+      'background-image': 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('+headerBGurl+')'
+    }">
       <h1 class="banner_title">{{trending.results![0].title}}</h1>
-      <div class="header__buttons"
-        [ngStyle]="{
-          'background-image': 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('+headerBGurl+')'
-        }"
-      >
+      <div class="header__buttons">
 
         <button class="btn play-button">
           <mat-icon class="btn-icon">arrow_right</mat-icon>
@@ -22,7 +20,7 @@
     </div><!--header Banner ends here -->
 
     <!-- header Main area -->
-    <div class="header_main" id="stickyheader" [class.sticy]="sticky" #stickyheader>
+    <div class="header_main" id="stickyheader" [class.sticky]="sticky" #stickyheader>
       <div class="header__left">
         <a routerLink="/">
           <img src="../assets/netflixlogo.svg" alt="netflixlogo" class="netflixlogo" >

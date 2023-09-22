@@ -20,11 +20,11 @@ export class AppComponent implements OnInit, OnDestroy{
   originals!:Movies;
   nowPlaying!:Movies;
 
-  sliderConfig={
-    slidersToShow:9,
+  sliderConfig = {
+    slidesToShow:6,
     slidesToScroll:2,
     autoplay:false,
-    across:true
+    across:true  
   };
 
   @ViewChild('stickyheader') header!: ElementRef;
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit, OnDestroy{
     this.subs.map(s=> s.unsubscribe());
   }
 
-  //to check howmuch have we scrolled
+  //to check how much have we scrolled
  @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
