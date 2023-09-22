@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="header">
+    <!-- header Banner area -->
+    <div class="header_banner">
+      <h1 class="banner_title">{{trending.results![0].title}}</h1>
+      <div class="header__buttons"
+        [ngStyle]="{
+          'background-image': 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('+headerBGurl+')'
+        }"
+      >
+
+        <button class="btn play-button">
+          <mat-icon class="btn-icon">arrow_right</mat-icon>
+          <span class="btn-span">Play</span>
+        </button>
+        <button class="btn more-button">
+          <mat-icon class="btn-icon">info</mat-icon>
+          <span class="btn-span">More Info</span>
+        </button>
+
+      </div>
+    </div><!--header Banner ends here -->
+
+    <!-- header Main area -->
+    <div class="header_main" id="stickyheader" [class.sticy]="sticky" #stickyheader>
+      <div class="header__left">
+        <a routerLink="/">
+          <img src="../assets/netflixlogo.svg" alt="netflixlogo" class="netflixlogo" >
+        </a>
+        <ul>
+          <li class="active li"><a class="a" href="#">Home</a></li>
+          <li class="li"><a class="a" href="#">Tv Shows</a></li>
+          <li class="li"><a class="a" href="#">Movies</a></li>
+          <li class="li"><a class="a" href="#">Latest</a></li>
+          <li class="li"><a class="a" href="#">My List</a></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <ul class="ul">
+          <li class="li"><a class="a" href="#"><mat-icon class="mat-icon">search</mat-icon></a></li>
+          <li class="li"><a class="a" href="#">Children</a></li>
+          <li class="li"><a class="a" href="#"><mat-icon class="mat-icon">card_giftcard</mat-icon></a></li>
+          <li class="li"><a class="a" href="#"><mat-icon class="mat-icon">notifications</mat-icon></a></li>
+          <li class="li"><img src="../assets/custom-netflix-icon-24.jpg" alt="avatar icon" style="max-width: 30px;"></li>
+
+        </ul>
+
+      </div>
+    </div><!-- header Main ends here -->
+  </div>
+
+  <div class="body" style="margin-top: 38rem;">
+    <app-slider title="Trending" [movies]="trending" [sliderConfig]="sliderConfig"></app-slider>
+    <app-slider title="Top Rated" [movies]="toprated" [sliderConfig]="sliderConfig"></app-slider>
+    <app-slider title="Now Playing" [movies]="nowPlaying" [sliderConfig]="sliderConfig"></app-slider>
+    <app-slider title="Popular" [movies]="popular" [sliderConfig]="sliderConfig"></app-slider>
+    <app-slider title="Originals" [movies]="originals" [sliderConfig]="sliderConfig"></app-slider>
+
+  </div>
+</div>

@@ -1,0 +1,7 @@
+API Key: 8ed77850ebe606c0c816dc9ca2e40535
+
+API Read Access Token
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZWQ3Nzg1MGViZTYwNmMwYzgxNmRjOWNhMmU0MDUzNSIsInN1YiI6IjY1MDg4MWJkZmEyN2Y0MDE0ZWIyNzBhOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BupTDxNMXHUD-gncj-GzP50Lk7ug7BNb7UFc5VK0038
+
+Application Name: NetflixClone
+Application URL: https://srishtisk.github.io/netflixclone
